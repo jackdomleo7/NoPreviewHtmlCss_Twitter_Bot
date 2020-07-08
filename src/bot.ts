@@ -8,14 +8,14 @@ const noPreviewHtmlCssSearch: Twit.Params = {
   result_type: 'recent',
 };
 
-const engageLatest = () => {
+const engageLatest = (): void => {
   Twitter.get('search/tweets', noPreviewHtmlCssSearch, (error: Error, data: any) => {
     if (!error) {
       for (let i: number = 0; i <= data.statuses.length - 1; i++) {
         const tweetId: string = data.statuses[i].id_str;
         Twitter.post(`statuses/retweet/${tweetId}`, {}, (error: Error, response: Response) => {
           if (response) {
-            console.log('Success! Check your bot, it should have retweeted something.');
+            console.log(`Success! Retweeted: ${tweetId}`);
           }
           if (error) {
             console.error('There was an error with Twitter:', error);
@@ -23,7 +23,7 @@ const engageLatest = () => {
         });
         Twitter.post('favorites/create', { id: tweetId }, (error: Error, response: Response) => {
           if (response) {
-            console.log('Success! Check your bot, it should have liked something.');
+            console.log(`Success! Liked: ${tweetId}`);
           }
           if (error) {
             console.error('There was an error with Twitter:', error);

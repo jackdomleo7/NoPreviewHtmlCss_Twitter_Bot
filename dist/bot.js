@@ -14,11 +14,11 @@ var noPreviewHtmlCssSearch = {
 var engageLatest = function engageLatest() {
   Twitter.get('search/tweets', noPreviewHtmlCssSearch, function (error, data) {
     if (!error) {
-      for (var i = 0; i <= data.statuses.length - 1; i++) {
+      var _loop = function _loop(i) {
         var tweetId = data.statuses[i].id_str;
         Twitter.post("statuses/retweet/".concat(tweetId), {}, function (error, response) {
           if (response) {
-            console.log('Success! Check your bot, it should have retweeted something.');
+            console.log("Success! Retweeted: ".concat(tweetId));
           }
 
           if (error) {
@@ -29,13 +29,17 @@ var engageLatest = function engageLatest() {
           id: tweetId
         }, function (error, response) {
           if (response) {
-            console.log('Success! Check your bot, it should have liked something.');
+            console.log("Success! Liked: ".concat(tweetId));
           }
 
           if (error) {
             console.error('There was an error with Twitter:', error);
           }
         });
+      };
+
+      for (var i = 0; i <= data.statuses.length - 1; i++) {
+        _loop(i);
       }
     } else {
       console.log('There was an error with your hashtag search:', error);
