@@ -10,6 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/jackdomleo7/twitter-bot-nopreviewhtmlcss.git"
   },
+  "homepage": "https://twitter.com/NoPreviewHtmlCs",
   "license": "MIT",
   "scripts": {
     "dev": "tsnd --respawn -r @babel/register src/bot.ts",
@@ -18,15 +19,15 @@
     "start": "node dist/bot.js"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/node": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-typescript": "^7.8.3",
-    "@babel/register": "^7.8.3",
-    "@types/node": "^13.7.1",
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@babel/register": "^7.10.4",
+    "@types/node": "^14.0.20",
     "ts-node-dev": "^1.0.0-pre.44",
-    "typescript": "^3.7.5"
+    "typescript": "~3.9.6"
   },
   "engines": {
     "node": ">=12"
