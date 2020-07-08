@@ -14,9 +14,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsnd --respawn -r @babel/register src/bot.ts",
-    "build": "babel ./src -d ./dist --extensions .ts",
-    "typecheck": "tsc",
-    "start": "node dist/bot.js"
+    "build": "babel ./src -d ./dist --extensions .ts"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
