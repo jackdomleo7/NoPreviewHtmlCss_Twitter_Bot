@@ -7,7 +7,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 var Twitter = new _twit["default"](require('./config'));
 var noPreviewHtmlCssSearch = {
   q: '#nopreviewhtmlcss',
-  count: 100,
+  count: 10,
   result_type: 'recent'
 };
 
@@ -42,10 +42,10 @@ var engageLatest = function engageLatest() {
         _loop(i);
       }
     } else {
-      console.log('There was an error with your hashtag search:', error);
+      console.error('There was an error with your hashtag search:', error);
     }
   });
 };
 
 engageLatest();
-setInterval(engageLatest, 1000 * 60 * 10); // Runs every 10 minutes
+setInterval(engageLatest, 1000 * 60 * 60 * 2); // Runs every 2 hours

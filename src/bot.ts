@@ -4,7 +4,7 @@ const Twitter = new Twit(require('./config'));
 
 const noPreviewHtmlCssSearch: Twit.Params = {
   q: '#nopreviewhtmlcss',
-  count: 100,
+  count: 10,
   result_type: 'recent',
 };
 
@@ -31,10 +31,10 @@ const engageLatest = (): void => {
         });
       }
     } else {
-      console.log('There was an error with your hashtag search:', error);
+      console.error('There was an error with your hashtag search:', error);
     }
   });
 };
 
 engageLatest();
-setInterval(engageLatest, 1000 * 60 * 10); // Runs every 10 minutes
+setInterval(engageLatest, 1000 * 60 * 60 * 2); // Runs every 2 hours
