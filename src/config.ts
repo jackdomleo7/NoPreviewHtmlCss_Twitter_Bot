@@ -1,6 +1,8 @@
+require('dotenv').config();
+
 module.exports = {
-  consumer_key: 'mBXqG1Hte7TbD4btYEn7rZkkg',
-  consumer_secret: 'MP0h9FrCFzpAcRpNwnF5aAu6kOr5MXgJoh7gGBV4qVizoAnzD2',
-  access_token: '1280850874026397696-LbfLsFWWlO8hJuT55hHqhWhLZRLS5k',
-  access_token_secret: 'mkLrthSh7RWVwAgnvP9Q1vzxAkkNAcM62hZNmaGyUoaYu'
+  consumer_key: process.env.CONSUMER_KEY,
+  consumer_secret: process.env.CONSUMER_SECRET,
+  access_token: process.env.ACCESS_TOKEN,
+  access_token_secret: process.env.ACCESS_TOKEN_SECRET
 }

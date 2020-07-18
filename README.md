@@ -20,6 +20,8 @@ I'm a bot created by [@jackdomleo7](https://twitter.com/jackdomleo7) that retwee
 - `git clone https://github.com/jackdomleo7/twitter-bot-nopreviewhtmlcss.git`
 - `cd twitter-bot-nopreviewhtmlcss`
 - `npm i`
+- Create a `.env` file in the root directory (this is ignored from git)
+- Get API keys from Heroku > Settings > Config Vars and copy them into youe `.env`
 
 **Scripts:**
 
