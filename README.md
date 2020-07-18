@@ -21,7 +21,7 @@ I'm a bot created by [@jackdomleo7](https://twitter.com/jackdomleo7) that retwee
 - `cd twitter-bot-nopreviewhtmlcss`
 - `npm i`
 - Create a `.env` file in the root directory (this is ignored from git)
-- Get API keys from Heroku > Settings > Config Vars and copy them into youe `.env`
+- Get API keys from Heroku > Settings > Config Vars and copy them into your `.env`
 
 **Scripts:**
 
