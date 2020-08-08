@@ -18,12 +18,12 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
-    "@babel/core": "^7.10.5",
+    "@babel/core": "^7.11.1",
     "@babel/node": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-env": "^7.11.0",
     "@babel/preset-typescript": "^7.10.4",
     "@babel/register": "^7.10.5",
-    "@types/node": "^14.0.23",
+    "@types/node": "^14.0.27",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "~3.9.7"
   },
@@ -31,7 +31,7 @@
     "node": ">=12"
   },
   "dependencies": {
-    "@types/twit": "^2.2.24",
+    "@types/twit": "^2.2.25",
     "dotenv": "^8.2.0",
     "twit": "^2.2.11"
   }
