@@ -1,6 +1,8 @@
 # Twitter Bot #NoPreviewHtmlCss
 
-![Twitter Follow](https://img.shields.io/twitter/follow/NoPreviewHtmlCs?style=social)
+![Maintenance](https://img.shields.io/maintenance/no/2020) - See [tweet](https://twitter.com/NoPreviewHtmlCs/status/1322947607291924480)
+
+[![Twitter Follow](https://img.shields.io/twitter/follow/NoPreviewHtmlCs?style=social)](https://twitter.com/NoPreviewHtmlCs)
 
 I'm a bot created by [@jackdomleo7](https://twitter.com/jackdomleo7) that retweets and likes tweets containing the [#NoPreviewHtmlCss](https://twitter.com/search?q=%23NoPreviewHtmlCss) hashtag.
 
